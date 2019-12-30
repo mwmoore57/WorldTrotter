@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C134027123B8289100C94FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134027023B8289100C94FF8 /* AppDelegate.swift */; };
 		C134027323B8289100C94FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134027223B8289100C94FF8 /* SceneDelegate.swift */; };
-		C134027523B8289100C94FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134027423B8289100C94FF8 /* ViewController.swift */; };
 		C134027823B8289100C94FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C134027623B8289100C94FF8 /* Main.storyboard */; };
 		C134027A23B8289300C94FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C134027923B8289300C94FF8 /* Assets.xcassets */; };
 		C134027D23B8289300C94FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C134027B23B8289300C94FF8 /* LaunchScreen.storyboard */; };
 		C134028823B8289300C94FF8 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134028723B8289300C94FF8 /* WorldTrotterTests.swift */; };
 		C134029323B8289300C94FF8 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134029223B8289300C94FF8 /* WorldTrotterUITests.swift */; };
+		C13A92D423B84F7200042B5A /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A92D323B84F7200042B5A /* ConversionViewController.swift */; };
+		C13A92D723B98BB800042B5A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C13A92D623B98BB800042B5A /* MapKit.framework */; };
+		C13A92D923B9975200042B5A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13A92D823B9975200042B5A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		C134026D23B8289100C94FF8 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C134027023B8289100C94FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C134027223B8289100C94FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C134027423B8289100C94FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C134027723B8289100C94FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C134027923B8289300C94FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C134027C23B8289300C94FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		C134028E23B8289300C94FF8 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C134029223B8289300C94FF8 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		C134029423B8289300C94FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13A92D323B84F7200042B5A /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		C13A92D623B98BB800042B5A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C13A92D823B9975200042B5A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13A92D723B98BB800042B5A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				C134028623B8289300C94FF8 /* WorldTrotterTests */,
 				C134029123B8289300C94FF8 /* WorldTrotterUITests */,
 				C134026E23B8289100C94FF8 /* Products */,
+				C13A92D523B98BB800042B5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				C134027023B8289100C94FF8 /* AppDelegate.swift */,
+				C13A92D323B84F7200042B5A /* ConversionViewController.swift */,
 				C134027223B8289100C94FF8 /* SceneDelegate.swift */,
-				C134027423B8289100C94FF8 /* ViewController.swift */,
 				C134027623B8289100C94FF8 /* Main.storyboard */,
+				C13A92D823B9975200042B5A /* MapViewController.swift */,
 				C134027923B8289300C94FF8 /* Assets.xcassets */,
 				C134027B23B8289300C94FF8 /* LaunchScreen.storyboard */,
 				C134027E23B8289300C94FF8 /* Info.plist */,
@@ -126,6 +133,14 @@
 				C134029423B8289300C94FF8 /* Info.plist */,
 			);
 			path = WorldTrotterUITests;
+			sourceTree = "<group>";
+		};
+		C13A92D523B98BB800042B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C13A92D623B98BB800042B5A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C134027523B8289100C94FF8 /* ViewController.swift in Sources */,
 				C134027123B8289100C94FF8 /* AppDelegate.swift in Sources */,
+				C13A92D423B84F7200042B5A /* ConversionViewController.swift in Sources */,
 				C134027323B8289100C94FF8 /* SceneDelegate.swift in Sources */,
+				C13A92D923B9975200042B5A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
