@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C115817423BA80F700542665 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C115817623BA80F700542665 /* Localizable.strings */; };
 		C134027123B8289100C94FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134027023B8289100C94FF8 /* AppDelegate.swift */; };
 		C134027323B8289100C94FF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134027223B8289100C94FF8 /* SceneDelegate.swift */; };
 		C134027823B8289100C94FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C134027623B8289100C94FF8 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C115817523BA80F700542665 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C115817723BA810100542665 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C134026D23B8289100C94FF8 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C134027023B8289100C94FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C134027223B8289100C94FF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,8 @@
 		C13A92D323B84F7200042B5A /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		C13A92D623B98BB800042B5A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C13A92D823B9975200042B5A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C13A92DB23BA7B5100042B5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C13A92DC23BA7BF700042B5A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 				C13A92D323B84F7200042B5A /* ConversionViewController.swift */,
 				C134027223B8289100C94FF8 /* SceneDelegate.swift */,
 				C134027623B8289100C94FF8 /* Main.storyboard */,
+				C115817623BA80F700542665 /* Localizable.strings */,
 				C13A92D823B9975200042B5A /* MapViewController.swift */,
 				C134027923B8289300C94FF8 /* Assets.xcassets */,
 				C134027B23B8289300C94FF8 /* LaunchScreen.storyboard */,
@@ -229,6 +235,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C134026423B8289100C94FF8;
 			productRefGroup = C134026E23B8289100C94FF8 /* Products */;
@@ -248,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C134027D23B8289300C94FF8 /* LaunchScreen.storyboard in Resources */,
+				C115817423BA80F700542665 /* Localizable.strings in Resources */,
 				C134027A23B8289300C94FF8 /* Assets.xcassets in Resources */,
 				C134027823B8289100C94FF8 /* Main.storyboard in Resources */,
 			);
@@ -313,10 +321,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C115817623BA80F700542665 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C115817523BA80F700542665 /* es */,
+				C115817723BA810100542665 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C134027623B8289100C94FF8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C134027723B8289100C94FF8 /* Base */,
+				C13A92DB23BA7B5100042B5A /* en */,
+				C13A92DC23BA7BF700042B5A /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -336,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -396,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
